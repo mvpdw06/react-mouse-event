@@ -56,7 +56,7 @@ class App extends PureComponent {
     //   // 'animation': `App-logo-spin-speedup infinite 3s linear`
     //   'animation-duration': '5s',
     //   'animation-timing-function': 'cubic-bezier(0.005, 0.970, 0.225, 0.990)'
-    // } : null
+    // } : null 
 
     return (
       <div>
