@@ -68,7 +68,7 @@ class App extends PureComponent {
           }}
           onClick={() => this.handleMouseClick()}
         >
-          <img src={logo} className="App-logo" style={iconStyle} alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
         </div>
 
         <div className="instructions">
