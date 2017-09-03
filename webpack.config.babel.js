@@ -60,7 +60,7 @@ const webpackConfig = {
     output: {
         path: path.join(__dirname, 'output/assets'),
         filename: 'app.js',
-        publicPath: '/assets'
+        publicPath: isDevEnv ? '/assets/' : '/output/assets/'
     },
     plugins: getPluginsSetting(),
     module: {
@@ -75,9 +75,10 @@ const webpackConfig = {
               loader: 'style-loader!css-loader'
             },
             {
-              test: /\.(png|jpg|gif|svg)$/,
+              test: /\.svg$/,
               loader: 'file-loader',
               options: {
+                name:	'logo.[ext]?[hash]',
               },
             }
         ]
